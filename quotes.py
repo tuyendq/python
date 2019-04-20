@@ -1,10 +1,10 @@
 from sys import argv
 import random
 
-script, file_name = argv
+script, file_name, file_html = argv
 
 # test first
-print "arg1: %r, arg2: %r" % (script, file_name)
+print "arg1: %r, arg2: %r, arg3: %r" % (script, file_name, file_html)
 
 # Todo: add exception
 input_file = open(file_name, 'r')
@@ -18,3 +18,7 @@ qotd =  input_file.readline()
 print qotd
 
 input_file.close()
+
+output_file = open(file_html, 'w')
+output_file.write(qotd)
+output_file.close()
