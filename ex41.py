@@ -22,7 +22,7 @@ PHRASES = {
 
 # do they want to drill phrases first
 PHRASE_FIRST = False
-if len(sys.argv) == 2 and sys.arg[1] == "english":
+if len(sys.argv) == 2 and sys.argv[1] == "english":
     PHRASE_FIRST = True
 
 # load up the words from the website
@@ -71,7 +71,7 @@ try:
             phrase = PHRASES[snippet]
             question, answer = convert(snippet, phrase)
             if PHRASE_FIRST:
-                question, answer = anwer, question
+                question, answer = answer, question
                 
             print question
 
