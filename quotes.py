@@ -42,10 +42,11 @@ with open(file_quotes, 'r') as input_file:
                 break
             else:
                 count = count + 1
-        print "The for look break when count is: %i." % count                
+        print "The for loop break when count is: %i." % count                
 print "Print to check global variables' values"
 print "Quote content: ", quote_content
 print "Quote author: ", quote_author
+print "\n\n"
 
 
 def create_html(file_html, quote_content, quote_author):
