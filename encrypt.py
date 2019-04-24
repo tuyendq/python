@@ -1,4 +1,4 @@
-# Encrypt whateve input
+# Encrypt whatever input
 # Store the random key and encrypted in 2 files
 # Usage: python encrypt.py key cipher_text
 #

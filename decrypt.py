@@ -10,8 +10,8 @@ def plain_text(file_key, file_cipher_text):
     cipher_suite = Fernet(key)
     return cipher_suite.decrypt(cipher_text)
 
-# Test
-file_key = '/home/user/.keys/key'
-file_cipher_text = '/home/user/.keys/cipher_text'
+# Test with key file and cipher_text file
+file_key = 'key'
+file_cipher_text = 'cipher_text'
 print plain_text(file_key, file_cipher_text)
 print '-' * 10
