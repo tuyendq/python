@@ -1,0 +1,21 @@
+from sys import exit
+from random import randint
+
+class Scene(object):
+
+	def enter(self):
+		print "This scene is not yet configured. Subclass it and implement enter()."
+			exit(1)
+
+class Engine(object):
+
+	def __init__(self, scene_map):
+		self.scene_map = scene_map
+
+	def play(self):
+		current_scene = self.scene_map.opening_scene()
+
+		while True:
+			print "\n--------"
+			next_scene_name = current_scene.enter()
+			current_scene = self.scene_map.netx_scene(next_scene_name)
