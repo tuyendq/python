@@ -4,7 +4,7 @@ except ImportError
 	from distutils.core import setup
 
 config = [
-	'description': 'ex47',
+	'description': 'Exercise 47'
 	'author': 'Tuyen Dang',
 	'url': 'URL to get it at.',
 	'download_url': 'where to download it.',
@@ -13,7 +13,7 @@ config = [
 	'install_requires': ['nose'],
 	'package': ['ex47'],
 	'scripts': [],
-	'name': 'ex47'
+	'name': 'projectname'
 ]
 
 setup(**config)
