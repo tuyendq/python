@@ -6,9 +6,6 @@ Author: Zed Z. Shaw
 ## Table of Contents
 [Preface](https://shop.learncodethehardway.org/paid/python3/preface.html)
 (https://shop.learncodethehardway.org/paid/python3/preface.html)[Preface]
-            
-            (https://shop.learncodethehardway.org/paid/python3/preface.html)[Preface]
-            
                 <li><a href="https://shop.learncodethehardway.org/paid/python3/preface.html">Preface</a></li>
                 <li><a href="https://shop.learncodethehardway.org/paid/python3/intro.html">The Hard Way Is Easier</a></li>
                 <li><a href="https://shop.learncodethehardway.org/paid/python3/ex0.html">Ex0: The Setup</a></li>
@@ -67,7 +64,5 @@ Author: Zed Z. Shaw
                 <li><a href="https://shop.learncodethehardway.org/paid/python3/advice.html">Advice From An Old Programmer</a></li>
                 <li><a href="https://shop.learncodethehardway.org/paid/python3/next.html">Next Steps</a></li>
                 <li><a href="https://shop.learncodethehardway.org/paid/python3/appendixa.html">Appendix A: Command Line Crash Course</a></li>
-            
-
 
 ## Other Python Courses/Tutorials
