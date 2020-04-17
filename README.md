@@ -5,7 +5,7 @@ Author: Zed Z. Shaw
 
 ## Table of Contents
 
-            <ol class="table-of-contents">
+            
             (https://shop.learncodethehardway.org/paid/python3/preface.html)[Preface]
             [Preface](https://shop.learncodethehardway.org/paid/python3/preface.html)
                 <li><a href="https://shop.learncodethehardway.org/paid/python3/preface.html">Preface</a></li>
@@ -66,7 +66,7 @@ Author: Zed Z. Shaw
                 <li><a href="https://shop.learncodethehardway.org/paid/python3/advice.html">Advice From An Old Programmer</a></li>
                 <li><a href="https://shop.learncodethehardway.org/paid/python3/next.html">Next Steps</a></li>
                 <li><a href="https://shop.learncodethehardway.org/paid/python3/appendixa.html">Appendix A: Command Line Crash Course</a></li>
-            </ol>
+            
 
 
 ## Other Python Courses/Tutorials
