@@ -1,9 +1,10 @@
-﻿# Learn Python the Hard Way
+# Learn Python the Hard Way
 Author: Zed Z. Shaw
 
 [Learn Python the Hard Way](https://shop.learncodethehardway.org/paid/python3/)
 
 ## Table of Contents
+[Preface](https://shop.learncodethehardway.org/paid/python3/preface.html)
                 <li><a href="https://shop.learncodethehardway.org/paid/python3/preface.html">Preface</a></li>
                 <li><a href="https://shop.learncodethehardway.org/paid/python3/intro.html">The Hard Way Is Easier</a></li>
                 <li><a href="https://shop.learncodethehardway.org/paid/python3/ex0.html">Ex0: The Setup</a></li>
