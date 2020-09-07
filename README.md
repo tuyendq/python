@@ -65,3 +65,7 @@ Author: Zed Z. Shaw
                 <li><a href="https://shop.learncodethehardway.org/paid/python3/appendixa.html">Appendix A: Command Line Crash Course</a></li>
 
 ## Other Python Courses/Tutorials
+
+[JetBrains Academy](https://blog.jetbrains.com/blog/2020/03/05/jetbrains-academy-python/)
+
+[How To Code in Python 3 | DigitalOcean](https://www.digitalocean.com/community/tutorial_series/how-to-code-in-python-3)
