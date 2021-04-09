@@ -39,6 +39,12 @@ if result.status_code == 200:
     print(content[2][0][0].text)
     print(content[2][0][0].attrib)
     
+    print(type(content[2][0][0].attrib))
+    print(content[2][0][0].attrib["buy"])
+    print(content[2][0][0].attrib["sell"])
+    print(content[2][0][0].attrib["type"])
+
+    
 # response_xml_as_string = "xml response string from API"
 # responseXml = ET.fromstring(response_xml_as_string)
 # testId = responseXml.find('data').find('testId')
