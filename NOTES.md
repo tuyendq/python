@@ -46,6 +46,21 @@ Get help with any builtin function
 help(print)
 ```
 
+## Common variable name error
+
+## Data types
+- List  
+- Tupple  
+- Set  
+- Dictionary  
+
+
 ## Lambda function
 Used to write short, simple functions
+
+
+# Commom function errors
+- Mission comma between arguments  
+- Missing parentheses at the end  
+
 
