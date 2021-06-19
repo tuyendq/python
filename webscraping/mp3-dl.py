@@ -7,13 +7,14 @@ def usage():
 def getFilename(url):
     """Extract base filename from url"""
     if url.find('/'):
-        return url.rsplit('/', 1)[1]
+        return (url.rsplit('/', 1)[1]).rstrip()
 
 def downloadmp3(url):
     """Download mp3 file from a url link"""
+    print("URL: ", url)
     mp3Filename = getFilename(url)
     print("Start downloading ", mp3Filename, " ...")
-    result = r.get(url, allow_redirects=True)
+    result = r.get(url, allow_redirects=True, verify=False)
     open(mp3Filename, 'wb').write(result.content)
     print("Finish downloading ", mp3Filename, " ...")
 
@@ -21,6 +22,7 @@ def download(filename):
     """Download list of mp3 file in a file, line-by-line"""
     with open(filename) as file:
         for url in file:
+            print(url)
             downloadmp3(url)
 
 def main():
