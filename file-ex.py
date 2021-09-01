@@ -2,6 +2,7 @@
 # LinkedIn Learning course: Working with Files by Kathryn Hodge
 from datetime import datetime
 import os
+import glob
 
 
 def format_datetime(timestamp):
@@ -49,11 +50,44 @@ def list_file(directory):
                 print("File: ", entry.name)
 
 
+def list_txt():
+    txt_files = glob.glob('*.txt')
+    print(txt_files)
+
+
+def top_down_walk():
+    '''Recursively list all files in a directory top down'''
+    for dirpath, dirnames, files in os.walk("F:/Projects/github/python"):
+        print("Directory: ", dirpath)
+        print("Includes these directories")
+        for dirname in dirnames:
+            print(dirname)
+        print("Includes these files")
+        for filename in files:
+            print(filename)
+        print()
+
+
+def bottum_up_walk():
+    '''Recursively list all files in a directory bottom up'''
+    for dirpath, dirnames, files in os.walk("F:/Projects/github/python", topdown=False):
+        print("Directory: ", dirpath)
+        print("Includes these directories")
+        for dirname in dirnames:
+            print(dirname)
+        print("Includes these files")
+        for filename in files:
+            print(filename)
+        print()
+
+
 if __name__ == "__main__":
     show_cwd()
-    up_1level()
+    # up_1level()
     show_cwd()
     list_all("./")
     list_all("F:/Projects/github/python")
     list_dir("./")
     list_file("F:/Projects/github/python")
+    list_txt()
+    top_down_walk()
