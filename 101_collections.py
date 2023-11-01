@@ -3,7 +3,10 @@
 import collections
 
 # list: mutable 
-
+list1 = ['list_item1', 'list_item2', 'list_item3']
+print(list1)
+print(type(list1))
+print(isinstance(list1, list))
 
 # tuple: fixed (immutable)
 
@@ -26,7 +29,19 @@ print(p2)
 
 # defaultdict
 
-# deque
+# deque - double-ended queu
+deck1 = collections.deque('abcdef')
+print(deck1)
+for el in deck1:
+    print(el.upper())
+    
+import string
+deck2 = collections.deque(string.ascii_lowercase)
+print(deck2)
+print(f"Length of deck2 is: {len(deck2)}")
+
+
+
 
 # Counter
 
