@@ -18,9 +18,10 @@ print(list1)
 
 
 def deduplicate_list(input_list):
-    result = list(set(input_list))
-    result.sort()
-    return result
+    # result = list(set(input_list))
+    # result.sort()
+    # return result
+    return sorted(set(input_list))
 
 test_list = ["crow", "cat", "bluejay", "cat", "woodpecker", "fox", "fox", "crow"]
 print(deduplicate_list(test_list))
