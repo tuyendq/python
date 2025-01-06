@@ -2,7 +2,7 @@ import requests as r
 from bs4 import BeautifulSoup
 import re
 
-site = 'http://trungtamhotong.org/'
+siteName = 'http://trungtamhotong.org/'
 url = 'http://trungtamhotong.org/index.php?module=phapthoai&cat_id=0&page=1'
 url1 = 'http://trungtamhotong.org/index.php?module=phapthoai&function=detail&page=1&id=510'
 url2 = 'http://trungtamhotong.org/index.php?module=phapthoai&function=detail&page=1&id=511'
@@ -51,6 +51,30 @@ def getFilename(url):
     if url.find('/'):
         return url.rsplit('/', 1)[1]
 
+def downloadmp3(filename):
+    """Download list of mp3 files in a list .txt"""
+    with open(filename) as file:
+        lines = file.readlines()
+    
+    count = 0
+    for line in lines:
+        count = count + 1
+        # print(line.strip())
+        mp3link = siteName + line.strip()
+        print(mp3link)
+
+        dl_link = getmp3url(mp3link)
+        print(dl_link)
+
+        mp3Filename = getFilename(dl_link)
+        print(mp3Filename)
+
+        print("Downloading file...")
+        result  = r.get(dl_link, allow_redirects=True)
+        open(mp3Filename, 'wb').write(result.content)
+
+    print("Total lines: ", count)
+
 def main():
     # dl_link = getmp3url(url1)
     # print(dl_link)
@@ -62,8 +86,11 @@ def main():
     # print("Downloading file...")
     # open(fileName, 'wb').write(result.content)
 
-    gethref(url)
+    # Get all href in an url
+    # gethref(url)
 
+    # Print text file line by line
+    downloadmp3("alllinks.txt")
 
 if __name__ == "__main__":
     main()
