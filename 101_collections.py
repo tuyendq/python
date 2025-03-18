@@ -1,5 +1,7 @@
 # Collections in Python
 
+# 4 built-in collection data types in Python: list, tuple, set, dictionary
+
 import collections
 
 # list: mutable 
