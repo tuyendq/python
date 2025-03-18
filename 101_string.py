@@ -1,4 +1,8 @@
 # Working with strings
+# String is a built-in data type (others are int, float, bool, list, etc.)
+# String is a sequence of characters (each character is a string of length 1)
+
+print("this is a string")
 
 if type("this is a string") is str:
     print("yes")
