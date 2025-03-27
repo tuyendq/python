@@ -1,4 +1,18 @@
 import contextlib
+import time
+
+@contextlib.contextmanager
+def timer():
+  """Time the execution of a context block.
+
+  Yields:
+    None
+  """
+  start = time.time()
+  # Send control back to the context block
+  yield
+  end = time.time()
+  print('Elapsed: {:.2f}s'.format(end - start))
 
 @contextlib.contextmanager
 def my_context():
@@ -63,3 +77,13 @@ def open_read_only(filename):
 
 with open_read_only('test.txt') as my_file:
   print(my_file.read())
+
+
+
+if __name__ == "__main__":
+  with timer():
+    print('This should take approximately 0.25 seconds')
+    time.sleep(0.25)
+
+def main():
+  pass
