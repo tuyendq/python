@@ -125,3 +125,6 @@ dmypy.json
 # Personal files
 tngh.txt
 tngh*.txt
+
+# Personal folders
+data/
