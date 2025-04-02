@@ -69,3 +69,14 @@ Author: Zed Z. Shaw
 [JetBrains Academy](https://blog.jetbrains.com/blog/2020/03/05/jetbrains-academy-python/)
 
 [How To Code in Python 3 | DigitalOcean](https://www.digitalocean.com/community/tutorial_series/how-to-code-in-python-3)
+
+## Python on Windows
+
+Python Launcher on Windows: 
+```
+py --list
+py --list-paths
+py -3.9 srcipt.py
+py -3.11 -m pip install --upgrade pip
+py -3.10 -m pip install filename.whl
+```
