@@ -1,3 +1,4 @@
+# Function is just another type of object in Python, such as integer, string...
 def apply_twice(func,arg):
     return func(func(arg))
 
