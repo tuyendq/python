@@ -1,5 +1,6 @@
 import contextlib
 import time
+import psycopg2
 
 @contextlib.contextmanager
 def timer():
@@ -24,19 +25,19 @@ with my_context() as foo:
   print("foo is {}".format(foo))
 
 
-@contextlib.contextmanager
-def database(url):
-  # set up database connection
-  db = postgres.connect(url)
-  yield db
-  # teardown database connection
-  db.disconnect()
+# @contextlib.contextmanager
+# def database(url):
+#   # set up database connection
+#   db = psycopg2.connect(url)
+#   yield db
+#   # teardown database connection
+#   db.disconnect()
 
-url = "https://datacamp.com/data"
-with database(url) as my_db:
-  course_list = my_db.execute(
-    "SELECT * FROM courses"
-  )
+# url = "https://datacamp.com/data"
+# with database(url) as my_db:
+#   course_list = my_db.execute(
+#     "SELECT * FROM courses"
+#   )
 
 
 # Add a decorator that will make timer() a context manager
