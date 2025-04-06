@@ -1,3 +1,9 @@
+# Dictionary is a built-in data type in Python
+# - stores key-value pairs
+# - is mutable (can add, remove, or modify items after creation)
+# 
+
+
 # Create an empty dictionary
 cusip_lookup = {}
 
@@ -16,6 +22,8 @@ cusip_lookup = {'123': 'AAPL', '456': 'MSFT', '789': 'GOOG'}
 # Dictionary methods
 print(cusip_lookup.keys())  # Print all keys in the dictionary
 print(cusip_lookup.values())  # Print all values in the dictionary
+print(cusip_lookup.items())  # Print all key-value pairs in the dictionary
+
 
 
 
