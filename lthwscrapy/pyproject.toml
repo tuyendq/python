@@ -1,0 +1,7 @@
+[project]
+name = "lthwscrapy"
+version = "0.1.0"
+description = "LTHW Scrapy"
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = []
