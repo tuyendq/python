@@ -1,4 +1,6 @@
 # Two types of arguments: positional and keyword arguments
+# *args: Arbitrary arguments
+# **kwargs: Arbitray keyword arguments
 
 import sys
 
@@ -11,6 +13,32 @@ def sum_all(*args):
     for n in args:
         sum += n
     return sum
+
+def concat(*args):
+  """Yet another example using arbitrary argument *args."""
+  # Create an empty string
+  result = ""
+  
+  # Iterate over the Python args tuple
+  for arg in args:
+    result += " " + arg
+  return result
+
+# Call the function
+print(concat("Python", "is", "great!"))
+
+def ya_concat(**kwargs):
+  """Yet another example using arbitrary keyword argument **kwargs."""
+  # Create an empty string
+  result = ""
+  
+  # Iterate over the Python kwargs
+  for kwarg in kwargs.values():
+    result += " " + kwarg
+  return result
+
+# Call the function
+print(concat(start="Python", middle="is", end="great!"))
 
 def main():
     print(f'Example to print out arguments')
