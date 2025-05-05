@@ -26,8 +26,9 @@ print(isinstance(book1, Book))  # Should be True
 print(isinstance(book1, Point))  # Should be False
 
 class Person():
-    def __init__(self, firstname):
+    def __init__(self, firstname, lastname):
         self.firstname = firstname
+        self.lastname = lastname
         # Just a convention for hidden attribute, but you can hack it
         self.__secret = "This is a secret attribute! But you can hack it."
 
@@ -40,8 +41,8 @@ class Person():
 # Go ahead, just call static method without creating an instance
 print(Person.get_person())
 
-person1 = Person("Tuyen")
-print(person1.firstname)
+person1 = Person("Tuyen","Dang")
+print(person1.firstname, person1.lastname)
 
 
 

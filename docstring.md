@@ -6,6 +6,7 @@
 Get docstring of a function using attribute  
 function_name.__doc__
 
+Using help() function to display docstring
 
 Using inspect module  
 ```python

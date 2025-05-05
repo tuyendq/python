@@ -1,6 +1,12 @@
 # Working with strings
 # String is a built-in data type (others are int, float, bool, list, etc.)
 # String is a sequence of characters (each character is a string of length 1)
+import string
+
+# string attributes
+print(string.ascii_lowercase)
+print(string.punctuation)
+
 
 print("this is a string")
 
