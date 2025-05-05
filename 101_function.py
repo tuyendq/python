@@ -3,6 +3,13 @@
 # We can return functions from other functions
 # We can store functions as dictionary values
 
+# function vs method
+# function: code to perform a task
+# method: a function that is specific to a data type (class)
+
+def print_hello():
+    print("Hello")
+
 def func_a():
     print('inside func_a')
 

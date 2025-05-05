@@ -1,7 +1,12 @@
+# Two types of arguments: positional and keyword arguments
+
 import sys
 
 def sum_all(*args):
-    """Sum all arguments"""
+    """Sum all arguments. 
+    An example of arbitrary argument.
+    * [asterisk] means convert all arguments into a tuple.
+    """
     sum = 0
     for n in args:
         sum += n

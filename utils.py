@@ -19,3 +19,22 @@ def kelvin_to_celsius(k):
         raise ValueError('Temp must be > 0 Kelvin')
     c = k - 273.15
     return c
+
+import re
+def url_friendly(string):
+    """
+    Convert a string to a URL-friendly format by replacing spaces with underscores.
+
+    Parameters:
+    string (str): The input string.
+
+    Returns:
+    str: The URL-friendly string.
+
+    Example:
+    >>> url_friendly("Hello World")
+    'Hello_World'
+    """
+    string = re.sub(r'[^\w\s-]', '', string.lower())
+    string = re.sub(r'[-\s]+', ' ', string).strip()
+    return string.replace(' ', '_')

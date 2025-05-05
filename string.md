@@ -1,4 +1,7 @@
-# String class
+# string is a built-in module in Python
+import string
+
+# About String class
 
 In Python, string is a list (and a list is a dynamic array).
 
