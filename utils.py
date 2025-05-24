@@ -21,6 +21,7 @@ def kelvin_to_celsius(k):
     return c
 
 import re
+import logging
 def url_friendly(string):
     """
     Convert a string to a URL-friendly format by replacing spaces with underscores.
@@ -38,3 +39,35 @@ def url_friendly(string):
     string = re.sub(r'[^\w\s-]', '', string.lower())
     string = re.sub(r'[-\s]+', ' ', string).strip()
     return string.replace(' ', '_')
+
+def validate_email(email):
+    """Check email address validity."""
+    email_regex = re.compile(
+        r"(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)"
+    )
+    if not email_regex.match(email):
+        raise ValueError(f"Invalid email address: {email}")
+    return True
+
+import time
+from contextlib import contextmanager
+@contextmanager
+def timer():
+    """Context manager to measure the elapsed time of a code block."""
+    start = time.perf_counter()
+    yield
+    end = time.perf_counter()
+    print(f"Elapsed time: {end - start} seconds")
+
+def get_logger(name):
+    """Get a logger instance with the specified name."""
+    logger = logging.getLogger(name)
+    logger.setLevel(logging.DEBUG)
+    formatter = logging.Formatter(
+        "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+    )
+    ch = logging.StreamHandler()
+    ch.setLevel(logging.DEBUG)
+    ch.setFormatter(formatter)
+    logger.addHandler(ch)
+    return logger
