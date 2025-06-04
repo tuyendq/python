@@ -1,6 +1,6 @@
 # Two types of arguments: positional and keyword arguments
 # *args: Arbitrary arguments
-# **kwargs: Arbitray keyword arguments
+# **kwargs: Arbitray keyword arguments key=value
 
 import sys
 
@@ -38,7 +38,15 @@ def ya_concat(**kwargs):
   return result
 
 # Call the function
-print(concat(start="Python", middle="is", end="great!"))
+print(ya_concat(begin="Python", middle="is", end="great!"))
+
+# Another example of using arbitrary keyword argument **kwargs
+def print_kwargs(**kwargs):
+    """Print all keyword arguments."""
+    for key, value in kwargs.items():
+        print(f"{key} = {value}")
+# Call the function
+print_kwargs(name="Alice", age=30, city="New York")
 
 def main():
     print(f'Example to print out arguments')

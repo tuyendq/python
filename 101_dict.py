@@ -1,7 +1,10 @@
+# At the root of all things Python is a dictionary.
+
 # Dictionary is a built-in data type in Python
 # - stores key-value pairs
 # - is mutable (can add, remove, or modify items after creation)
-# 
+# - indexing is done by keys, not by position
+# - does not allow duplicate keys
 
 
 # Create an empty dictionary
