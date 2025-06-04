@@ -38,3 +38,24 @@ def url_friendly(string):
     string = re.sub(r'[^\w\s-]', '', string.lower())
     string = re.sub(r'[-\s]+', ' ', string).strip()
     return string.replace(' ', '_')
+
+
+from contextlib import contextmanager
+@contextmanager
+def timer():
+    """
+    Context manager to measure the execution time of a block of code.
+
+    Example:
+    >>> with timer() as t:
+    ...     # some code
+    ...     pass
+    >>> print(t.elapsed)
+    0.123456789
+    """
+    import time
+    start = time.time()
+    yield TimerContext(start)
+    end = time.time()
+    elapsed = end - start
+    print(f"Elapsed time: {elapsed:.6f} seconds")
